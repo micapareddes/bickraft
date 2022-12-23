@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Poppins';
+  color: #fff;
+
+  padding-bottom: 600px; /* apenas para codificar, lembrar de tirar no final */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}

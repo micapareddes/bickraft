@@ -1,0 +1,90 @@
+/* --INTRO-- */
+.intro-bg {
+  background-color: #000;
+  box-shadow: inset 0 -120px #fff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.intro-conteudo {
+  grid-row: 1 / 3;
+  align-self: end;
+  padding-bottom: 200px;
+  gap: 20px;
+}
+
+.intro h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+  font-weight: 600;
+}
+
+.intro h1 span {
+  color: #ffbb00;
+}
+
+.intro p {
+  grid-column: 1;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.intro img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  border-radius: 4px;
+  height: 100%;
+  object-fit: cover; /* imagem é cortada para caber 100% ao invés de ficar se esticando */
+}
+
+/* INTRO RESPONSIVO-- */
+@media (max-width: 1200px) {
+  .intro h1 {
+    font-size: 48px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-bg {
+    background-color: #111;
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #fff;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .intro-conteudo {
+    padding-bottom: 0;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .intro img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
