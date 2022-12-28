@@ -1,0 +1,57 @@
+.lista-bicicletas{
+  padding: 60px 0 120px 0;
+}
+
+.lista-bicicletas h2{
+  margin-bottom: 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+/* nosso h2 está dento do container que utilizamos na introdução com um max de 1200px, já nossa lista de bikes como no design ela é maior do que o container, definimos um container maior para ela, nesse caso 1400px */
+.lista-bicicletas ul{
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  max-width: 1400px;
+  /* se eu tenho um max devo sempre definir a margin */
+  margin: 0 auto;
+}
+
+.lista-bicicletas a{
+  display: block; 
+  /* para que na hora de selecionar, pegue o grupo da img, titulo e preço como um conjunto e não caxinhas individuais envolvendo cada elemento. pd. da para ver quando da alt + tab no mac */
+}
+
+.lista-bicicletas img{
+  margin-bottom: 16px;
+}
+
+.lista-bicicletas h3{
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  /* para que o titulo e o before fiquem alineados ao centro, ou seja, o quadrado fica no meio do texto */
+}
+
+.lista-bicicletas h3::before{
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+}
+
+.lista-bicicletas li span{
+  padding-left: 20px;
+  /* para deixar o preço alineado ao titulo e nao ao elemento before do titulo */
+}
+
+/* RESPONSIVO */
+@media (max-width: 800px) {
+  .lista-bicicletas{
+    padding: 60px 0;
+  }
+}

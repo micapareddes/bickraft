@@ -10,5 +10,7 @@
 /* HOME */
 @import url(./home/intro.css);
 
+/* BICICLETAS */
+@import url(./bicicletas/lista.css);
 
 /*utilizando um cs utilitario nosso codigo do css ficará mais limpo pois focará apenas em pocisionamento do elemento e espeçamento, já a estilização ficara na sua respectiva pasta.css */

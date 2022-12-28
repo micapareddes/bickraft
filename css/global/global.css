@@ -6,9 +6,12 @@
   list-style: none;
 }
 
-
 body {
   padding-bottom: 600px; /* apenas para codificar, lembrar de tirar no final */
+}
+
+a {
+  color: inherit;
 }
 
 img {
@@ -16,6 +19,7 @@ img {
   display: block;
 }
 
-a {
-  color: inherit;
+img[src$=".jpg"] { /* seleciona elemento com atributo source e termine em jpg */
+  border-radius: 4px;
 }
+
