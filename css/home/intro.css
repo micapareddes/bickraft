@@ -1,7 +1,7 @@
 /* --INTRO-- */
 .intro-bg {
-  background-color: #000;
-  box-shadow: inset 0 -120px #fff;
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0);
 }
 
 .intro {
@@ -23,23 +23,11 @@
 
 .intro h1 {
   margin-bottom: 32px;
-  font-size: 64px;
-  line-height: 1.125;
-  font-weight: 600;
-}
-
-.intro h1 span {
-  color: #ffbb00;
 }
 
 .intro p {
   grid-column: 1;
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #b2b2b2;
-  font-family: 'Roboto';
-  font-weight: 400;
 }
 
 .intro img {
@@ -50,7 +38,7 @@
   object-fit: cover; /* imagem é cortada para caber 100% ao invés de ficar se esticando */
 }
 
-/* INTRO RESPONSIVO-- */
+/* RESPONSIVO-- */
 @media (max-width: 1200px) {
   .intro h1 {
     font-size: 48px;
@@ -63,9 +51,9 @@
 
 @media (max-width: 800px) {
   .intro-bg {
-    background-color: #111;
+    background-color: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px #fff;
+    box-shadow: inset 0 -60px var(--cor-0);
   }
 
   .intro {
