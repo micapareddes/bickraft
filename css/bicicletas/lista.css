@@ -13,10 +13,17 @@
 .lista-bicicletas ul{
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   max-width: 1400px;
   /* se eu tenho um max devo sempre definir a margin */
   margin: 0 auto;
+  overflow-x: auto;
+  /* utilizamos auto ao invez de scroll para que a barra do scroll nao estaja sempre presente la e apenas apareça quando for necessário. Especificando overflow-x faz com que a barra apareça sempre no eixa x, ou seja, na horizontal, e nunca na vertical */
+}
+
+.lista-bicicletas li{
+  /* item flexivel pois pai possui display flex. Definimos um min width para conseguir fazer uma scroll bar no mobile. Porém, precisa ser definido no pai um overfloww: scroll; para que a li vaze apenaas no seu container e não na pag inteira */
+  min-width: 280px;
 }
 
 .lista-bicicletas a{
@@ -42,6 +49,11 @@
   width: 12px;
   margin-right: 8px;
   background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.lista-bicicletas a:hover h3::before{
+  width: 24px;
 }
 
 .lista-bicicletas li span{
@@ -53,5 +65,9 @@
 @media (max-width: 800px) {
   .lista-bicicletas{
     padding: 60px 0;
+  }
+
+  .lista-bicicletas ul{
+    gap: 20px;
   }
 }
