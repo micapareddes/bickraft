@@ -1,0 +1,56 @@
+.parceiros{
+  /* lembre-se que estamos definindo tudo com margin-bottom */
+  margin-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros h2{
+  margin-bottom: 60px;
+}
+
+.parceiros ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 20px;
+}
+
+.parceiros li{
+  display: flex;
+  /* definimos display flex para poder centrallizar cada svg */
+  padding: 32px;
+  border-left: 2px solid var(--cor-2);
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5){
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5){
+  /* n + x significa: "a partir de x numero", nesse caso, o 5 */
+  border-top: 2px solid var(--cor-2);
+}
+
+.parceiros img{
+  margin: auto;
+  /* usamos auto para centralizar cada uma delas, é tipo o margin 0 auto porém esta é para centralizar tudo ao centro e nao so os lados como o 0 auto */
+}
+
+/* RESPONSIVO */
+@media(max-width: 800px) {
+  .parceiros{
+    padding-bottom: 60px;
+  }
+  .parceiros h2{
+    margin-bottom: 20px;
+  }
+  .parceiros ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .parceiros li:nth-child(n + 3){
+    border-top: 2px solid var(--cor-2);
+  }
+  .parceiros li:nth-child(odd){
+    border-left: none;
+  }
+}

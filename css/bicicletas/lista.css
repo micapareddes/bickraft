@@ -11,9 +11,9 @@
   display: flex;
   gap: 40px;
   padding: 0 20px 20px 20px;
-  max-width: 1400px;
+  /* max-width: 1400px; movida para componentes como 'vazando'*/
   /* se eu tenho um max devo sempre definir a margin */
-  margin: 0 auto;
+  /* margin: 0 auto;  movida para componentes como 'vazando'*/
   overflow-x: auto;
   /* utilizamos auto ao invez de scroll para que a barra do scroll nao estaja sempre presente la e apenas apareça quando for necessário. Especificando overflow-x faz com que a barra apareça sempre no eixa x, ou seja, na horizontal, e nunca na vertical */
 }

@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.vazando{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .botao {
   grid-column: 1;
   display: inline-block;
