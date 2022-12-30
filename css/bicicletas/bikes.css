@@ -1,0 +1,119 @@
+.bikes-bg {
+  background: linear-gradient(to right, #fff 20%, #111 0);
+  
+  /* nao podemos alterar uma parte do fundo com box-shadow dessa vez pois nao aceita porcentageme ao definir um valor fixo de px quando a tela for maior nosso layout ficara desconfigurado */
+}
+
+.bikes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bikes-img {
+  position: relative;
+}
+/* o elemento span tmb pode ser colocado acima da foto utilizando grid, ficaria da seguinte forma:
+.bikes-img {
+  display:grid;
+}
+.bikes-img img{
+  grid-area: 1/1; // fica na primeira linha e na primeira coluna 
+}
+.bikes-img span{
+  grid-area: 1/1;
+  place-self: start end; // no topo e na direita
+  margin-top: 20px; //pq nao queremos ele totalmente colado no topo
+}  */
+.bikes-img span {
+  display: inline-block;
+  background-color: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.bikes h2 {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bikes h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bikes p {
+  margin-bottom: 32px;
+  max-width: 45ch;
+}
+
+.bikes li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.bikes-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+.bikes-conteudo img{
+  width: 24px;
+}
+
+.bikes-conteudo h2,
+.bikes-conteudo p {
+  grid-column: 1/-1;
+}
+
+.bikes-conteudo a {
+  grid-column: 2;
+  place-self: end;
+}
+
+
+/* RESPONSIVO */
+@media(max-width: 800px){
+  .bikes-bg {
+    background: var(--cor-11);
+  }  
+  .bikes{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media(max-width: 600px){
+  .bikes-conteudo{
+    display: block; /* nao pega o grid-template-column 1fr */
+  }
+  .bikes h2 {
+    margin-bottom: 10px;
+  }
+  .bikes p {
+    margin-bottom: 15px;
+  }
+  .bikes ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bikes li{
+    font-size: 1rem;
+  }
+  .bikes-conteudo a {
+    margin-top: 10px;
+    place-self: start;
+  }
+}
