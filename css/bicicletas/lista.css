@@ -4,10 +4,7 @@
 
 .lista-bicicletas h2{
   margin-bottom: 40px;
-  max-width: 1200px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
+ 
 }
 /* nosso h2 está dento do container que utilizamos na introdução com um max de 1200px, já nossa lista de bikes como no design ela é maior do que o container, definimos um container maior para ela, nesse caso 1400px */
 .lista-bicicletas ul{

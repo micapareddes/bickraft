@@ -1,0 +1,79 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.tecnologia-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* evita que a foto seja distorcida ao forçar um height de 100% */
+  object-position: left;
+}
+
+.tecnologia-conteudo {
+  padding: 160px 0;
+}
+
+.tecnologia-conteudo > span {
+  /* fala direto com o span dentro de tec-conteudo */
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo a {
+  margin-bottom: 80px;
+}
+
+.tecnologia ul {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia li {
+  display: grid;
+  gap: 8px;
+}
+
+.tecnologia li h3 {
+  width: max-content;
+  /* faz com que ao diminuir a tela o titulo se manetnha sempre em duas linhas, consequentemente o conteudo se adapta a ele */
+}
+
+/* RESPONSIVO */
+@media(max-width: 800px){
+  .tecnologia-bg{
+    box-shadow: initial;  /* valor inicial, ou seja, nenhum */
+  }
+  .tecnologia{
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-img{
+    display: none;
+  }
+  .tecnologia-conteudo{
+    padding: 60px 0;
+  }
+.tecnologia-conteudo a {
+  margin-bottom: 60px;
+}
+}
+
+@media(max-width: 600px){
+  .tecnologia ul{
+    flex-direction: column;
+  }
+}

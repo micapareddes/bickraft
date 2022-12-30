@@ -8,10 +8,7 @@
   gap: 20px; /* mantem sempre uma distancia de no mín 20px entre o logo e o menú, quando chega aos 20px, quebra de linha pois temos o flex-wrap: wrap */
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .header-menu {
