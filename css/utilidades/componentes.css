@@ -21,10 +21,18 @@
   text-transform: uppercase;
   color: var(--cor-p5);
   font: 600 1.5rem/1.5 "Poppins", sans-serif;
+  max-width: max-content; /* para que nao desconfigure na hora de pertencer ao grid */
 }
-
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao.secundario {
+  background: var(--cor-10);
+  color: var(--cor-0);
+}
+.botao.secundario:hover {
+  background-color: var(--cor-9);
 }
 
 .link{

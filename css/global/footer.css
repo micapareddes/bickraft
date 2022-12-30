@@ -1,0 +1,62 @@
+.footer-bg {
+  background-color: var(--cor-12);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  /* baseado no template de coluna do figma estudado no curso de ui */
+  gap: 40px;
+  padding: 60px 20px !important;
+}
+
+.footer h2,
+.footer-contato ul {
+  margin-bottom: 32px;
+}
+
+.footer li {
+  margin-bottom: 16px;
+}
+
+.footer-contato li:nth-child(even)::after {
+  content: "";
+  display: block;
+  max-width: 360px;
+  height: 2px;
+  margin-top: 16px;
+  background-color: var(--cor-11);
+}
+
+.redes {
+  display: flex;
+  gap: 32px;
+}
+
+.footer a:hover {
+  color: var(--cor-0);
+}
+
+.footer-copy {
+  grid-column: 1/-1;
+  margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 800px) {
+  .footer > img {
+    display: none;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer-copy {
+    margin-top: 0;
+  }
+}
