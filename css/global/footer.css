@@ -8,6 +8,7 @@
   /* baseado no template de coluna do figma estudado no curso de ui */
   gap: 40px;
   padding: 60px 20px !important;
+  /* aqui tive que utilizar o important pq no container ao invez de definir os valores com padding-top e bottom defini diretamente com paddign, definindo os lados com valor 0. Como o container tem peso maior que minha tag footer, os novos valores nao estavam sendo aplcados, ppor isso precisa do important */
 }
 
 .footer h2,
