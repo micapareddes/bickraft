@@ -29,11 +29,6 @@
   background-color: var(--cor-11);
 }
 
-.redes {
-  display: flex;
-  gap: 32px;
-}
-
 .footer a:hover {
   color: var(--cor-0);
 }
