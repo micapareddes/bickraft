@@ -1,9 +1,9 @@
 #contato {
   background: var(--cor-1);
-  background: linear-gradient(to bottom, var(--cor-11) 42%, var(--cor-1) 0);
+  background: linear-gradient(to bottom, var(--cor-11) 600px, var(--cor-1) 0);
 }
 
-.contato {
+.contato-grid {
   display: grid;
   grid-template-columns: 5fr 7fr; /* valores retirados do template de colunas no curso de ui */
 }
@@ -66,7 +66,7 @@
 
 /* RESPONSIVO */
 @media(max-width: 800px){
-  .contato{
+  .contato-grid{
     grid-template-columns: 1fr;
   }
   .contato-dados,

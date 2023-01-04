@@ -41,47 +41,85 @@
             </div>
         </div>
         <div class="contato container">
-            <section class="contato-dados" aria-label="Endereço">
-                <h2 class="font-1-m cor-0">Loja Online</h2>
-                <div class="contato-endereco font-2-s cor-4">
-                    <!-- <img src="./img/icones/local.svg" alt=""> posso por icones como background diretamente no css
-                    obs. eu faria com grid pois usaria menos codigo para colocar o icone e separar os p -->
-                    <p>Rua Ali Perto, 35</p>
-                    <p>Florianóplois - SC</p>
-                    <p>Brasil - Terra - Via Láctea</p>
+            <div class="contato-grid">
+                <section class="contato-dados" aria-label="Endereço">
+                    <h2 class="font-1-m cor-0">Loja Online</h2>
+                    <div class="contato-endereco font-2-s cor-4">
+                        <!-- <img src="./img/icones/local.svg" alt=""> posso por icones como background diretamente no css
+                        obs. eu faria com grid pois usaria menos codigo para colocar o icone e separar os p -->
+                        <p>Rua Ali Perto, 35</p>
+                        <p>Florianóplois - SC</p>
+                        <p>Brasil - Terra - Via Láctea</p>
+                    </div>
+                    <address class="contato-meios font-2-s cor-4">
+                        <a href="malito:vendas@bikcraft.com">vendas@bikcraft.com</a>
+                        <a href="malito:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                        <a href="tel:+55 21 9999-9999">+55 21 9999-9999</a>
+                    </address>
+                    <div class="redes">
+                        <a href=""><img src="./img/redes/instagram-p.svg" alt="Instagram logo"></a>
+                        <a href=""><img src="./img/redes/facebook-p.svg" alt="Facebook logo"></a>
+                        <a href=""><img src="./img/redes/youtube-p.svg" alt="Youtube logo"></a>
+                    </div>
+                </section>
+                <section class="contato-formulario" aria-label="Formulário">
+                    <form class="form" action="./contato.html">
+                    <!-- colocamos os elementos do formulario em divs para conseguir organizar eles certinho no grid, por ex., nome e cel ficarao lado a lado e email ocupara de ponta a ponta -->
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(99) 9999-9999">
+                        </div>
+                        <div class="col-2">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contato@email.com">
+                        </div>
+                        <div class="col-2">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="O que você precisa?"></textarea>
+                        </div>
+                        <button class="botao col-2" type="submit">Enviar Mensagem</button>
+                    </form>
+                </section>
+            </div>
+
+            <section class="contato-lojas" aria-label="Lojas">
+
+                <h2 class="font-1-xxl cor-11">lojas locais<span class="cor-p1">.</span></h2>
+
+                <div class="lojas-card">
+                    <img src="./img/lojas/rj.jpg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-1-xl">Florianóplois</h3>
+                        <div class="font-2-s cor-8">
+                        <p>Rua Ali Perto, 25</p>
+                        <p>Florianóplois - SC</p>
+                        </div>
+                        <address class="font-2-s cor-8">
+                            <a href="malito:floripa@bikcraft.com">floripa@bikcraft.com</a>
+                            <a href="tel:48 9999-9999">(48) 9999-9999</a>
+                        </address>
+                        <p class="card-hr font-1-xs">08-18h de seg à dom</p>
+                    </div>
                 </div>
-                <address class="contato-meios font-2-s cor-4">
-                    <a href="malito:vendas@bikcraft.com">vendas@bikcraft.com</a>
-                    <a href="malito:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-                    <a href="tel:+55 21 9999-9999">+55 21 9999-9999</a>
-                </address>
-                <div class="redes">
-                    <a href=""><img src="./img/redes/instagram-p.svg" alt="Instagram logo"></a>
-                    <a href=""><img src="./img/redes/facebook-p.svg" alt="Facebook logo"></a>
-                    <a href=""><img src="./img/redes/youtube-p.svg" alt="Youtube logo"></a>
+                <div class="lojas-card">
+                    <img src="./img/lojas/rj.jpg" alt="">
+                    <div class="card-text">
+                        <h3 class="font-1-xl">São Paulo</h3>
+                        <div class="font-2-s cor-8">
+                        <p>Rua Mais Perto, 52</p>
+                        <p>São Paulo - SP</p>
+                        </div>
+                        <address class="font-2-s cor-8">
+                            <a href="malito:sp@bikcraft.com">floripa@bikcraft.com</a>
+                            <a href="tel:11 9999-9999">(11) 9999-9999</a>
+                        </address>
+                        <p class="card-hr font-1-xs">08-18h de seg à dom</p>
+                    </div>
                 </div>
-            </section>
-            <section class="contato-formulario" aria-label="Formulário">
-                <form class="form" action="./contato.html">
-                <!-- colocamos os elementos do formulario em divs para conseguir organizar eles certinho no grid, por ex., nome e cel ficarao lado a lado e email ocupara de ponta a ponta -->
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                    </div>
-                    <div>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 9999-9999">
-                    </div>
-                    <div class="col-2">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="contato@email.com">
-                    </div>
-                    <div class="col-2">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="O que você precisa?"></textarea>
-                    </div>
-                    <button class="botao col-2" type="submit">Enviar Mensagem</button>
-                </form>
             </section>
         </div>
     </main>
