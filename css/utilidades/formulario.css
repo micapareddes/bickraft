@@ -1,0 +1,50 @@
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label{
+  /* definimos a font aqui para nao sujar o html */
+  display: block;
+  margin-bottom: 4px;
+  font: 600 1rem/1.5 "Poppins", sans-serif ;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea { /* deve-se definir o tipo de input */
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  padding: 12px;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+.form .col-2{
+  grid-column: 1/-1;
+}
+
+.form .botao{
+  justify-self: start;
+}
+
+/* RESPONSIVO */
+@media(max-width: 600px){
+  .form{
+    grid-template-columns: 1fr;
+}
+}

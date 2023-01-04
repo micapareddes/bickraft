@@ -1,3 +1,88 @@
-.contato{
+#contato {
+  background: var(--cor-1);
+  background: linear-gradient(to bottom, var(--cor-11) 42%, var(--cor-1) 0);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr; /* valores retirados do template de colunas no curso de ui */
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
   background-color: var(--cor-12);
+  border-radius: 5px 0 0 5px;
+}
+
+.contato-formulario {
+  background-color: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px; /* a posiçao definida é a quantidade de padding que queremos entre o icone e o texto mais o width do icone ~ width=24px distancia=4px */
+  background: url(../../img/icones/local.svg) no-repeat 0 2px;
+}
+
+.contato-endereco p{
+  margin-bottom: 8px;
+}
+
+.contato-meios a{
+  display: block;
+  max-width: max-content;
+  /* isto é pq por ser uma area de click se deixamos do jeito padrao, fora de onde esta o texto ainda é uma area clicavel e pode induzir um erro na hora do usuario utilizar. Assim, com o max-content a area do elemento é aenas onde há texto, logo a area de click limita-se ali tmb */
+  margin-bottom: 8px;
+  padding-left: 28px;
+}
+
+.contato-meios a:hover {
+  color: var(--cor-0);
+}
+
+.contato-meios a:first-child {
+  background: url(../../img/icones/email.svg) no-repeat 0 2px;
+}
+
+.contato-meios a:last-child {
+  margin-top: 32px;
+  margin-bottom: 60px;
+  background: url(../../img/icones/telefone.svg) no-repeat 0 2px;
+}
+
+.contato-dados .redes{
+  padding-left: 28px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 800px){
+  .contato{
+    grid-template-columns: 1fr;
+  }
+  .contato-dados,
+.contato-formulario {
+  padding: 20px;
+}
+.contato-dados {
+  border-radius: 5px 5px 0 0;
+}
+.contato-formulario{
+  border-radius: 0 0 5px 5px;
+}
+.contato-dados h2 {
+  margin-bottom: 32px;
+}
+.contato-dados .redes{
+  margin-bottom: 12px;
+}
 }

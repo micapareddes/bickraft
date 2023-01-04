@@ -23,6 +23,7 @@
   color: var(--cor-p5);
   font: 600 1.5rem/1.5 "Poppins", sans-serif;
   max-width: max-content; /* para que nao desconfigure na hora de pertencer ao grid */
+  cursor: pointer;
 }
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
