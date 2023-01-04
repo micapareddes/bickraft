@@ -1,0 +1,90 @@
+.contato-lojas{
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contato-lojas h2{
+    padding-bottom: 20px ;
+    display: block;
+    grid-column: 1/-1;
+}
+
+.lojas-card{
+    background-color: var(--cor-0);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lojas-card img{
+    border-radius: 0;
+}
+
+.card-text{
+    padding: 32px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+}
+
+.card-text h3{
+    grid-column: 1/-1;
+}
+
+.card-text div > p,
+.card-text address{
+    border-left: 2px solid var(--cor-2);
+    padding-left: 12px;
+}
+
+.card-text a{
+    display: block;
+}
+
+.card-hr{
+    position: relative;
+    grid-column: 1/-1;
+}
+
+.card-hr::before,
+.card-text h3::before{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.card-text h3::before{
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    top: 48px;
+    left: 36px;
+}
+
+
+.card-hr::before{
+    width: 20px;
+    height: 20px;
+    background: url(../../img/icones/horario.svg)no-repeat;
+    left: -28px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 800px){
+.contato-lojas{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+}
+.contato-lojas h2{
+    padding-bottom: 0px ;
+}
+.card-text{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+}
