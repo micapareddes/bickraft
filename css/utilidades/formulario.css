@@ -14,6 +14,7 @@
 .form input[type="text"],
 .form input[type="tel"],
 .form input[type="email"],
+.form select,
 .form textarea { /* deve-se definir o tipo de input */
   font: 400 1rem/1.5 "Roboto", sans-serif;
   padding: 12px;
@@ -27,6 +28,7 @@
 form input[type="text"]:focus,
 .form input[type="tel"]:focus,
 .form input[type="email"]:focus,
+.form select:focus,
 .form textarea:focus {
   outline: none;
   border-color: var(--cor-p1);
@@ -40,6 +42,19 @@ form input[type="text"]:focus,
 
 .form .botao{
   justify-self: start;
+}
+
+.checkbox{
+  display: flex;
+  gap: 12px;
+  align-items: center;  
+}
+
+.checkbox input{
+  height: 32px;
+  width: 32px;
+  border: 5px solid var(--cor-4);
+  background-color: var(--cor-1);
 }
 
 /* RESPONSIVO */

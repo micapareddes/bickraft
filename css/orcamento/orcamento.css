@@ -1,0 +1,70 @@
+.destaque {
+  position: relative;
+  grid-column: 1/-1;
+}
+.destaque::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  left: -12px;
+  top: 7px;
+}
+
+.margin-top{
+  margin-top: 60px;
+}
+
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr; 
+  margin-bottom: 120px;
+}
+
+.orcamento h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.orcamento-escolha,
+.orcamento-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-escolha {
+  background-color: var(--cor-12);
+  border-radius: 5px 0 0 5px;
+}
+
+.option{
+  display: flex;
+  gap: 20px;
+}
+
+.radio{
+  padding: 16px;
+  background-color: var(--cor-0);
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.radio label{
+  margin-left: 12px;
+}
+
+.escolha{
+  display: grid;
+  gap: 20px;
+}
+
+.orcamento-formulario {
+  background-color: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+}
+
+
