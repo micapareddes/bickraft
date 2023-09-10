@@ -13,3 +13,7 @@
   max-width: 75ch;
   margin-bottom: 24px;
 }
+
+.termos span{
+  text-decoration: underline;
+}

@@ -8,7 +8,7 @@
   /* definimos a font aqui para nao sujar o html */
   display: block;
   margin-bottom: 4px;
-  font: 600 1rem/1.5 "Poppins", sans-serif ;
+  font: 400 1rem/1.5 "Poppins", sans-serif ;
 }
 
 .form input[type="text"],
