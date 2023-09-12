@@ -50,3 +50,8 @@ function abrirMenu(event) {
     }
 }
 perguntas.forEach((pergunta) => pergunta.addEventListener('click', abrirMenu))
+
+// Animação
+if (window.SimpleAnime) {
+    new SimpleAnime()
+}
