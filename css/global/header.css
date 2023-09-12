@@ -39,7 +39,8 @@
 
 /* se crio o meu elemento after diretamente no hover ocorrerá o bug de quando aparecer o efeito ao passar o mouse por cima o menú crescerá e ficará "dançando", por isso criamos nosso elemento after porém deixamos "invisivel" com o width:0; e depois o deixamos aparente no hover com width: 100%; */
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
